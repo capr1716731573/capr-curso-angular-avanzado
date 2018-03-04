@@ -1,0 +1,13 @@
+{{ leyenda }} - {{ porcentaje }}
+<br>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-primary" type="button" (click)="cambiarValor(-5)"><i class="mdi mdi-minus"></i></button>
+    </div>
+    <!-- aqui le pongo un nombre de variable al elemento input txtProgress y en el controlador lo utilizo con el @ViewChild-->
+    <!-- (ngModelChange) es un evento listener que se ejecuta cuando el valor del ngModel cambia -->
+    <input #txtProgress type="number" class="form-control" name="porcentaje" [(ngModel)]='porcentaje' (ngModelChange)="onChanges($event)" placeholder="" aria-label="" aria-describedby="basic-addon1" min="1" max="100">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-primary" type="button" (click)="cambiarValor(+5)"><i class="mdi mdi-plus"></i></button>
+    </div>
+</div>

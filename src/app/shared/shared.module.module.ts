@@ -5,6 +5,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -19,7 +20,6 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     NopagefoundComponent
   ],
   imports: [
-    
   ],
   
 })

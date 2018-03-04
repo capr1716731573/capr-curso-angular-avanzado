@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 
 //MODULOS
 import { SharedModule } from "../shared/shared.module.module";
+import { ChartsModule } from 'ng2-charts';
+//RUTAS
 import { PAGINA_CONTENEDOR_ROUTES } from "./pagina-contenedor.routes";
 
 //COMPONENTE PRINCIPAL
@@ -12,6 +14,12 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgessComponent } from './progess/progess.component';
 import { RouterModule } from '@angular/router';
 
+//TEMPORAL
+import { IncrementadorComponent } from "../componentes-personalizados/incrementador/incrementador.component";
+import { GraficoDonaComponent } from '../componentes-personalizados/grafico-dona/grafico-dona.component';
+
+//temporal
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +27,10 @@ import { RouterModule } from '@angular/router';
         PaginaContenedorComponent,
         DashboardComponent,
         Graficas1Component,
-        ProgessComponent
+        ProgessComponent,
+
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     exports:[
         PaginaContenedorComponent,
@@ -29,8 +40,10 @@ import { RouterModule } from '@angular/router';
     ],
     imports:[
         SharedModule,
+        ChartsModule,
         //importo las rutsa de ese modulo que seran rutas hijas del app.routes principal
-        PAGINA_CONTENEDOR_ROUTES
+        PAGINA_CONTENEDOR_ROUTES,
+        FormsModule
     ]
 })
 
