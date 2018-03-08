@@ -20,6 +20,7 @@ import { GraficoDonaComponent } from '../componentes-personalizados/grafico-dona
 
 //temporal
 import { FormsModule } from '@angular/forms';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
         ProgessComponent,
 
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports:[
         PaginaContenedorComponent,
