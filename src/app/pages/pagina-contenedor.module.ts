@@ -21,6 +21,8 @@ import { GraficoDonaComponent } from '../componentes-personalizados/grafico-dona
 //temporal
 import { FormsModule } from '@angular/forms';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RsjxComponent } from './rsjx/rsjx.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RsjxComponent
     ],
     exports:[
         PaginaContenedorComponent,
